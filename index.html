@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Portfolio d'Aya Esghuir, développeuse web et étudiante à l'ISET Tozeur">
 <title>Aya Esghuir | Développeuse Web</title>
+<link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">    
 
 </head>
 <body>
@@ -80,6 +80,9 @@
 <p>© 2025 Aya Esghuir — Créé avec 💖 et passion</p>
 </footer>
 <button class="scroll-top" aria-label="Retour en haut" id="scrollBtn">↑</button>
+<a href="CV_Aya_Esghuir.pdf" download="CV_Aya_Esghuir.pdf" class="btn-download" aria-label="Télécharger le CV en PDF">
+  📄 Télécharger CV
+</a>
 <script>
 const s=document.getElementById('scrollBtn');window.addEventListener('scroll',()=>{s.classList.toggle('visible',window.scrollY>300)});s.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});document.querySelectorAll('a[href^="#"]').forEach(a=>{a.onclick=e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));t&&t.scrollIntoView({behavior:'smooth',block:'start'})}})
 </script>
