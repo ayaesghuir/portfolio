@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfolio d'Aya Esghuir, développeuse web et étudiante à l'ISET Tozeur">
+<title>Aya Esghuir | Développeuse Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">    
+
+</head>
+<body>
+<header class="hero">
+<div class="hero-content">
+<h1 class="hero-title">Aya Esghuir</h1>
+<p class="hero-subtitle">Développeuse Web & Étudiante à l'ISET Tozeur</p>
+<a href="#projects" class="btn" aria-label="Voir mes projets">Voir mes projets</a>
+</div>
+</header>
+<section class="about section" id="about">
+<h2 class="section-title">À propos de moi</h2>
+<div class="about-container">
+<img src="unnamed.jpg" alt="Photo de profil d'Aya Esghuir" class="profile-img" loading="lazy">
+<p>Développeuse web passionnée avec une expérience en développement frontend et gestion de projets. Certifiée Scrum Master et Python, j'ai acquis une solide expérience lors de mon stage à Cyberparc Djerba où j'ai développé une boîte email interne en équipe. Actuellement Responsable Marketing au Club Électrobotek, je combine créativité technique et leadership.</p>
+</div>
+</section>
+<section class="projects section" id="projects">
+<h2 class="section-title">Mes projets</h2>
+<div class="project-grid">
+<article class="project-card">
+<h3>🤖 Poubelle Intelligente</h3>
+<p>Système automatisé avec capteurs d'objets pour tri intelligent des déchets.</p>
+</article>
+<article class="project-card">
+<h3>🚗 Robot Tout-Terrain</h3>
+<p>Conception et programmation d'un robot autonome capable de naviguer sur différents terrains.</p>
+</article>
+<article class="project-card">
+<h3>📧 Boîte Email Interne</h3>
+<p>Développement frontend lors de mon stage à Cyberparc Djerba - projet réalisé en équipe.</p>
+</article>
+<article class="project-card">
+<h3>💼 Projet universitaire</h3>
+<p>Application web collaborative développée en Node.js et Vue.js.</p>
+</article>
+</div>
+</section>
+<section class="certifications section" id="certifications">
+<h2 class="section-title">Certifications & Expériences</h2>
+<div class="project-grid">
+<article class="project-card">
+<h3>📜 Scrum Master Certifié</h3>
+<p>Certification en méthodologies agiles et gestion de projets.</p>
+</article>
+<article class="project-card">
+<h3>🐍 Certification Python</h3>
+<p>Maîtrise du langage Python pour le développement et l'automatisation.</p>
+</article>
+<article class="project-card">
+<h3>💼 Stage à Cyberparc Djerba</h3>
+<p>Développement frontend d'une boîte email interne en environnement professionnel.</p>
+</article>
+<article class="project-card">
+<h3>📢 Responsable Marketing</h3>
+<p>Club Électrobotek - Gestion de la communication et promotion des activités.</p>
+</article>
+</div>
+</section>
+<section class="contact section" id="contact">
+<h2 class="section-title">Contact</h2>
+<p>Tu veux collaborer ou discuter d'un projet ? 💌</p>
+<div class="contact-info">
+<a href="mailto:aya.esghuir@gmail.com" class="btn" aria-label="Envoyer un email">📧 aya.esghuir@gmail.com</a>
+<p>📞 50044024</p>
+</div>
+</section>
+<footer class="footer">
+<p>© 2025 Aya Esghuir — Créé avec 💖 et passion</p>
+</footer>
+<button class="scroll-top" aria-label="Retour en haut" id="scrollBtn">↑</button>
+<script>
+const s=document.getElementById('scrollBtn');window.addEventListener('scroll',()=>{s.classList.toggle('visible',window.scrollY>300)});s.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});document.querySelectorAll('a[href^="#"]').forEach(a=>{a.onclick=e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));t&&t.scrollIntoView({behavior:'smooth',block:'start'})}})
+</script>
+</body>
+</html>
